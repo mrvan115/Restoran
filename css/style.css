@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Tinos&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -88,6 +91,90 @@ h6 {
 }
 
 /*--------------------*/
+body {
+  font-family: "Tinos", serif;
+}
+
 .container {
   margin: 0 166px;
+}
+
+.header {
+  background-image: url(../image/header/bg.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__line {
+  padding: 50px 0 0 0;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  margin: 0 268px 0 0;
+}
+.nav__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  margin: 0 25px 0 0;
+}
+.nav__link:last-child {
+  margin: 0 70px 0 0;
+}
+
+.cart {
+  position: relative;
+  border-right: 1px solid #ffffff;
+  padding-right: 10px;
+  height: 50px;
+  margin: 0 30px 0 0;
+}
+.cart__img {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+
+.phone {
+  color: #ffffff;
+  font-family: "Open Sans";
+  margin: 0 45px 0 0;
+}
+.phone__holder {
+  display: flex;
+  align-items: center;
+}
+.phone__pic {
+  margin: 0 8px 0 0;
+}
+.phone__number-link {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+.phone__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  max-width: 155px;
+}
+
+.btn-header {
+  background: #ff7400;
+  padding: 14px 18px;
+}
+.btn-header__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
 }
