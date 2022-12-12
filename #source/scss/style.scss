@@ -6,9 +6,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 // Основные контейнеры========================================================================================================================================================
+html,
 body {
+	max-width: 100%;
 	font-family: 'Tinos', serif;
 }
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+}
+
 .container {
 	margin: 0 166px;
 }
@@ -52,10 +60,14 @@ body {
 		font-size: 14px;
 		line-height: 19px;
 		color: #ffffff;
+		transition: color 0.3s linear;
 
 		margin: 0 25px 0 0;
 		&:last-child {
 			margin: 0 70px 0 0;
+		}
+		&:hover {
+			color: #ff7400;
 		}
 	}
 }
@@ -96,6 +108,12 @@ body {
 		font-weight: 700;
 		font-size: 18px;
 		line-height: 25px;
+		transition: color 0.3s linear;
+
+		&:hover {
+			color: #ff7400;
+			text-decoration: underline;
+		}
 	}
 
 	&__text {
@@ -108,7 +126,8 @@ body {
 }
 
 .btn-header {
-	background: #ff7400;
+	display: inline-block;
+	background-color: #ff7400;
 	padding: 14px 18px;
 	&__text {
 		font-family: 'Open Sans';
@@ -117,5 +136,66 @@ body {
 		font-size: 14px;
 		line-height: 19px;
 		color: #ffffff;
+		transition: background-color 0.2s linear;
+	}
+
+	&:hover {
+		background-color: #ffa65d;
+	}
+}
+
+//Header-down========================================================================================================================================================
+.header-down {
+	position: relative;
+	&__text {
+	}
+}
+
+.text-header {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	margin: 205px 0 0 0;
+	&__title {
+		font-weight: 400;
+		font-size: 50px;
+		line-height: 57px;
+		color: #d67e35;
+	}
+
+	&__subtitle {
+		font-weight: 400;
+		font-size: 80px;
+		line-height: 92px;
+		color: #d67e35;
+	}
+
+	&__text {
+		position: relative;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		color: #ffffff;
+		margin: 0 0 20px 0;
+		&::after {
+			position: absolute;
+			content: '';
+			height: 2px;
+			width: 61px;
+			background-color: #fff;
+			top: 10px;
+			left: 90px;
+		}
+		&::before {
+			position: absolute;
+			content: '';
+			height: 2px;
+			width: 61px;
+			background-color: #fff;
+			top: 10px;
+			left: 331px;
+		}
 	}
 }
