@@ -33,6 +33,7 @@ body {
 		padding: 50px 0 0 0;
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 	}
 
 	&__logo {
@@ -197,5 +198,50 @@ body {
 			top: 10px;
 			left: 331px;
 		}
+	}
+}
+
+//cards========================================================================================================================================================
+
+.cards {
+	margin: -105px 0 0 0;
+	&__item {
+		display: flex;
+		text-align: center;
+		justify-content: space-between;
+	}
+
+	&__cart {
+	}
+}
+
+.cart-item {
+	background-color: #ffffff;
+	max-width: 349px;
+	// border: 1px solid #0a0909;
+	padding: 5px 25px;
+	box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+	&__img {
+		margin: 48px 10px 4px 10px;
+	}
+
+	&__title {
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 30px;
+		color: #2c2c2c;
+		margin: 0 0 20px 0;
+	}
+	&__title span {
+		color: #bc9060;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 30px;
+		color: #656363;
+		margin-bottom: 25px;
 	}
 }
