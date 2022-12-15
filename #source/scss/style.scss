@@ -18,7 +18,8 @@ body {
 }
 
 .container {
-	margin: 0 166px;
+	width: 1110px;
+	margin: 0 auto;
 }
 
 //Переменные========================================================================================================================================================
@@ -33,7 +34,7 @@ body {
 		padding: 50px 0 0 0;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		// justify-content: space-between;
 	}
 
 	&__logo {
@@ -65,7 +66,7 @@ body {
 
 		margin: 0 25px 0 0;
 		&:last-child {
-			margin: 0 70px 0 0;
+			margin: 0 45px 0 0;
 		}
 		&:hover {
 			color: #ff7400;
@@ -129,6 +130,7 @@ body {
 .btn-header {
 	display: inline-block;
 	background-color: #ff7400;
+	text-align: center;
 	padding: 14px 18px;
 	&__text {
 		font-family: 'Open Sans';
@@ -148,6 +150,7 @@ body {
 //Header-down========================================================================================================================================================
 .header-down {
 	position: relative;
+	padding: 0 0 20px 0;
 	&__text {
 	}
 }
@@ -204,11 +207,12 @@ body {
 //cards========================================================================================================================================================
 
 .cards {
-	margin: -80px 0 0 0;
+	margin: -80px 0 150px 0;
 	&__item {
 		display: flex;
 		text-align: center;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	&__cart {
@@ -217,10 +221,14 @@ body {
 
 .cart-item {
 	background-color: #ffffff;
-	max-width: 349px;
+	min-width: 349px;
 	// border: 1px solid #0a0909;
+	margin: 0 30px 0 0;
 	padding: 5px 25px;
 	box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+	&:last-child {
+		margin: 0 0 0 0;
+	}
 	&__img {
 		margin: 48px 10px 4px 10px;
 	}
@@ -243,5 +251,85 @@ body {
 		line-height: 30px;
 		color: #656363;
 		margin-bottom: 25px;
+		max-width: 290px;
+	}
+}
+
+//Story========================================================================================================================================================
+
+.story {
+	margin: 0 0 122px 0;
+	padding: 0 10px;
+	&__items {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__stats {
+		margin: 16px 0 0 0;
+		// padding: 0 10px;
+	}
+
+	&__pic {
+	}
+}
+
+.stats-story {
+	text-align: center;
+	&__item {
+	}
+
+	&__title {
+		margin: 0 0 20px 0;
+		font-weight: 400;
+		font-size: 54px;
+		line-height: 62px;
+		color: #000000;
+		span {
+			color: #d67e35;
+		}
+	}
+
+	&__text {
+		max-width: 444px;
+		margin: 0 0 80px 0;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		color: #656363;
+	}
+
+	&__stats {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__info {
+		margin: 0 40px 0 0;
+	}
+
+	&__number {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 54px;
+		color: #bc9060;
+	}
+
+	&__p {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 27px;
+		color: #000000;
+	}
+}
+
+.pic-story {
+	&__img {
 	}
 }
