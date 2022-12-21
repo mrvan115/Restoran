@@ -565,7 +565,7 @@ body {
   line-height: 62px;
   color: #000000;
   text-align: center;
-  margin: 0 0 60px 0;
+  margin: 0 0 100px 0;
 }
 .gallery__title span {
   color: #d67e34;
@@ -620,4 +620,42 @@ body {
 }
 .g-right-item__img-b {
   width: 100%;
+}
+
+.cooks {
+  padding: 0 0 100px 0;
+}
+.cooks__title {
+  text-align: center;
+  margin: 0 0 100px 0;
+  font-size: 54px;
+  line-height: 62px;
+  color: #000000;
+}
+.cooks__title span {
+  color: #d67e34;
+}
+.cooks__row {
+  display: flex;
+  height: 460px;
+  justify-content: space-between;
+}
+.cooks__column {
+  flex: 0 1 33.333%;
+  margin: 0 30px 0 0;
+}
+.cooks__column:last-child {
+  margin: 0;
+}
+.cooks__column img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.photo {
+  background-image: url(../image/cooks/photo.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

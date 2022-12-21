@@ -590,7 +590,7 @@ body {
 		line-height: 62px;
 		color: #000000;
 		text-align: center;
-		margin: 0 0 60px 0;
+		margin: 0 0 100px 0;
 		span {
 			color: #d67e34;
 		}
@@ -659,4 +659,52 @@ body {
 	&__img-b {
 		width: 100%;
 	}
+}
+
+//Our cooks========================================================================================================================================================
+
+.cooks {
+	padding: 0 0 100px 0;
+	&__title {
+		text-align: center;
+		margin: 0 0 100px 0;
+		font-size: 54px;
+		line-height: 62px;
+		color: #000000;
+		span {
+			color: #d67e34;
+		}
+	}
+
+	&__row {
+		display: flex;
+		height: 460px;
+		justify-content: space-between;
+	}
+
+	&__column {
+		flex: 0 1 33.333%;
+		margin: 0 30px 0 0;
+		&:last-child {
+			margin: 0;
+		}
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.item-cooks {
+	&__image {
+	}
+}
+
+//Photo========================================================================================================================================================
+
+.photo {
+	background-image: url(../image/cooks/photo.jpg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
